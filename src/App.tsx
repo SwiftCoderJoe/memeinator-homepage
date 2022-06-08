@@ -5,7 +5,8 @@ import iPhone from "./iPhoneGradient.png"
 import appStoreBadge from "./appStoreBadge.svg"
 
 import Home from "./Pages/Home"
-import Support from "./Pages/Support"
+import FAQ from "./Pages/FAQ"
+import Contact from "./Pages/Contact"
 
 const App: Component = () => {
   const [transform, setTransform] = createSignal("md:translate-y-[0]");
@@ -17,7 +18,8 @@ const App: Component = () => {
   return (
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/support" element={<Support/>}></Route>
+      <Route path="/faq" element={<FAQ/>}></Route>
+      <Route path="/contact" element={<Contact/>}></Route>
     </Routes>
   );
 };
