@@ -1,6 +1,6 @@
 import { Component, createSignal } from 'solid-js';
 
-import iPhone from "./../Media/iPhoneSim.png"
+import iPhone from "./../Media/memeinator.png"
 import appStoreBadge from "./../Media/appStoreBadge.svg"
 
 import Header from "./../Components/Header"
@@ -15,7 +15,7 @@ const Home: Component = () => {
   return (
     <div class="flex flex-col h-screen w-screen">
       <Header page="home" />
-      <div class="p-3 flex-1 min-h-0 flex flex-col-reverse lg:gap-5 lg:flex-row justify-end lg:justify-around overflow-hidden">
+      <div class="p-3 flex-1 min-h-0 flex flex-col-reverse lg:gap-12 lg:flex-row justify-end lg:justify-around overflow-hidden">
         <img src={iPhone} alt="Memeinator app" class={`lg:h-full transform lg:scale-125 ${scale()} ${transform()} transition-all duration-1000`}/>
         <div class="flex flex-col justify-center gap-2 text-center lg:text-left">
           <h1 class="text-5xl lg:text-8xl text-purple">Welcome to Memeinator.</h1>
