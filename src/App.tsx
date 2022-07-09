@@ -7,6 +7,7 @@ import appStoreBadge from "./appStoreBadge.svg"
 import Home from "./Pages/Home"
 import FAQ from "./Pages/FAQ"
 import Contact from "./Pages/Contact"
+import Privacy from './Pages/Privacy';
 
 const App: Component = () => {
   const [transform, setTransform] = createSignal("md:translate-y-[0]");
@@ -20,6 +21,7 @@ const App: Component = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/faq" element={<FAQ/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
+      <Route path="/privacy" element={<Privacy/>}></Route>
     </Routes>
   );
 };
