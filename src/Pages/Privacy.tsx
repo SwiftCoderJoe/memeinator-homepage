@@ -1,16 +1,15 @@
 import { Component } from 'solid-js';
+import { Title } from '@solidjs/meta';
 
-import Header from "./../Components/Header"
 import Question from '../Components/Question';
 import Box from '../Components/Box';
 import BoxLink from '../Components/BoxLink';
 import LargeTitle from '../Components/LargeTitle';
 
 const Privacy: Component = () => {
-  return (
+  return <>
+    <Title>Privacy</Title>
     <div class="flex flex-col h-screen w-screen">
-      <Header page="privacy" />
-      {/* This div used to center horizontally */}
       <div class="flex flex-col items-center divide-y">
         <div class="flex flex-col p-6 items-stretch w-full lg:w-1/3 text-left gap-3">
           <LargeTitle>The Main Ideas</LargeTitle>
@@ -94,7 +93,7 @@ const Privacy: Component = () => {
         </div>
       </div>
     </div>
-  );
+  </>;
 };
 
 export default Privacy;
