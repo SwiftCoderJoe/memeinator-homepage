@@ -4,7 +4,7 @@ const LargeTitle: Component<{children: JSXElement}> = (props) => {
   const c = children(() => props.children)
 
   return (
-    <div class="flex flex-row justify-center text-center"><div class="bg-slate-200 rounded-md p-6 w-min text-5xl lg:text-8xl">{c()}</div></div>
+    <div class="flex flex-row justify-center text-center"><div class="bg-slate-200 rounded-md p-6 w-fit text-5xl lg:text-8xl">{c()}</div></div>
   )
 }
 
