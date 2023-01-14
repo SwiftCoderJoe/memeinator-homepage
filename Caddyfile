@@ -2,4 +2,4 @@
 
 # This is goofy ahh solidjs. everything is index.html
 rewrite * /
-file_server
+file_server browse
