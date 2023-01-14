@@ -1,6 +1,6 @@
 :80
 
-# respond with index.html if that's the request.
+# respond with index.html or the relevant source file, if that's the request.
 file_server
 
 
