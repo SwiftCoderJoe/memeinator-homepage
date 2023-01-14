@@ -1,5 +1,15 @@
 :80
 
+# respond with index.html if that's the request.
+file_server
+
+
+# For all other requests, rewrite the request to be index.html
 # This is goofy ahh solidjs. everything is index.html
-rewrite * /
-file_server browse
+handle_errors {
+    @404 {
+        expression {http.error.status_code} == 404
+    }
+    rewrite @404 /index.html
+    file_server
+}
