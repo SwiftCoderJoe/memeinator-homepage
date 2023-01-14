@@ -1,5 +1,5 @@
 :80
 
 # This is goofy ahh solidjs. everything is index.html
-rewrite * /index.html
+rewrite * /
 file_server
