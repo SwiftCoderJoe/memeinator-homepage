@@ -1,13 +1,13 @@
 import { Component, createSignal } from 'solid-js';
+import { Title } from '@solidjs/meta';
 
-import Header from "./../Components/Header"
 import Question from '../Components/Question';
 import LargeTitle from '../Components/LargeTitle';
 
 const FAQ: Component = () => {
-  return (
+  return <>
+    <Title>FAQ</Title>
     <div class="flex flex-col h-screen w-screen">
-      <Header page="faq" />
       {/* This div used to center horizontally */}
       <div class="flex flex-col items-center divide-y">
         <div class="flex flex-col p-6 items-stretch w-full lg:w-1/3 text-left gap-3">
@@ -24,7 +24,7 @@ const FAQ: Component = () => {
         </div>
       </div>
     </div>
-  );
+  </>;
 };
 
 export default FAQ;

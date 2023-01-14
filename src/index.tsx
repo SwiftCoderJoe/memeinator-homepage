@@ -1,8 +1,16 @@
 /* @refresh reload */
 import './index.css';
 import { render } from 'solid-js/web';
-import { Router } from 'solid-app-router'
+import { Router } from '@solidjs/router'
+import { MetaProvider } from '@solidjs/meta';
 
 import App from './App';
 
-render(() => <Router><App /></Router>, document.getElementById('root') as HTMLElement);
+render(() => 
+    <MetaProvider>
+        <Router>
+            <App />
+        </Router>
+    </MetaProvider>, 
+    document.getElementById('root') as HTMLElement
+);

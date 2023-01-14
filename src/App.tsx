@@ -1,27 +1,21 @@
-import { Component, createSignal } from 'solid-js';
-import { Route, Routes } from 'solid-app-router'
+import { Component, createSignal, lazy } from 'solid-js';
+import { Route, Routes, A } from '@solidjs/router'
 
-import iPhone from "./iPhoneGradient.png"
-import appStoreBadge from "./appStoreBadge.svg"
+const Home = lazy(() => import("./Pages/Home"))
+const FAQ = lazy(() => import("./Pages/FAQ"))
+const Contact = lazy(() => import("./Pages/Contact"))
 
-import Home from "./Pages/Home"
-import FAQ from "./Pages/FAQ"
-import Contact from "./Pages/Contact"
+import Nav from "./Components/Nav"
 
 const App: Component = () => {
-  const [transform, setTransform] = createSignal("md:translate-y-[0]");
-  const [scale, setScale] = createSignal("scale-125")
-
-  setTimeout(() => setTransform("md:translate-y-1/4"), 100)
-  setTimeout(() => setScale("scale-100"), 100)
-
-  return (
+  return <>
+    <Nav></Nav>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/faq" element={<FAQ/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
     </Routes>
-  );
+  </>;
 };
 
 export default App;
