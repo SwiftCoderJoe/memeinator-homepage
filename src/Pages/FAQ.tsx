@@ -23,6 +23,9 @@ const FAQ: Component = () => {
           <Question asking="I purchased Memeinator Pro, but it's not working. What should I do?">
             First, you can contact us using the links below to get help with your purchase. If this doesn't work or you don't want to do this, you can also request a refund. All purchases made on the Memeinator app are done through Apple. If Memeinator Pro is not working or is not up to your standards, you can always refund the purchase my going to the "More" tab, then clicking "Help", clicking on "Memeinator Pro" and then clicking "Request a Refund". Refunds are requested through Apple, so we can't guarantee that your refund will be accepted.
           </Question>
+          <Question asking="Is Memeinator open source?">
+            Yes! Memeinator is open source. The GitHub repository for Memeinator is available <a href="https://github.com/swiftcoderjoe/memeinator/" class="text-purple transition-all border-b border-white duration-200 hover:border-purple">here</a>. To learn more about how Memeinator was created and what technologies it usesm, visit the GitHub page linked earlier or <a href="https://joecardenas.dev/" class="text-purple transition-all border-b border-white duration-200 hover:border-purple">my portfolio</a>.
+          </Question>
         </div>
         
         <div class="flex flex-col p-6 items-stretch w-full lg:w-1/3 text-left gap-3">
